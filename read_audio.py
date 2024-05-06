@@ -4,7 +4,7 @@ import scipy.io.wavfile as wav
 
 # Set the sample rate and duration of the recording
 sample_rate = 16000  # You can adjust this value if needed
-duration = 5  # Recording duration in seconds
+duration = 10  # Recording duration in seconds
 
 # Record audio from the microphone
 recording = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=1)

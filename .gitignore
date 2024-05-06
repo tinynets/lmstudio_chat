@@ -1,3 +1,5 @@
 vosk-model-en-us-0.42-gigaspeech/
 __pycache__/
 *.wav
+prompts/*
+*.mp3

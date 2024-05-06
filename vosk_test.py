@@ -4,7 +4,7 @@ import json
 import pyaudio
 from vosk import Model, KaldiRecognizer
 
-model_path = vosk-model-en-us-0.42-gigaspeech"
+model_path = "vosk-model-en-us-0.42-gigaspeech"
 if not os.path.exists(model_path):
     print("Model directory not found.")
     exit(1)
