@@ -2,7 +2,7 @@ from openai import OpenAI
 import os
 
 # Read the system prompt from the prompts directory
-prompts_directory = "/Users/vineetkuruvilla/learning/tts_lmstudio/prompts"
+prompts_directory = "prompts"
 sys_zombie_path = os.path.join(prompts_directory, "sys_zombie.txt")
 
 with open(sys_zombie_path, "r") as file:

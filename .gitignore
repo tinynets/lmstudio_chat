@@ -3,3 +3,4 @@ __pycache__/
 *.wav
 prompts/*
 *.mp3
+prompts/*
