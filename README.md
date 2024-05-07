@@ -3,15 +3,13 @@
 The purpose of this project is to be able to talkto various models in LMStudio and have it talk
 back.
 
--- Where i am at now
+I can have a directory "prompts" with text files so that i can have various prompts for various types of conversations and models
 
-I can get audio from user usinf read_audio
-I can convert this to text by running the wav_to_text script
+I can now chat with different models using the "say" command in macos - I think I would like a different voice but any tts i use in this project must work fully offline, so will get back to this.
 
-## Next Steps
+## Non Comprehensive Todo
 
-Experiment with smaller models for faster inference, maybe real time? and then skip the step where
-it needs to save to a file and directly make an http request to LMStudio
-
-
-
+- Some kind of way to do model selection
+- Some nicer styling in the terminal so i can differentiate between system messages, llm msgs andmi=y msgs
+- to be able to use the voice chat over a network so other machines can use it on my network
+- maybe a simple web interface?
