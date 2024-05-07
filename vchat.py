@@ -1,7 +1,7 @@
+import os
 import sounddevice as sd
 import whisper
 from openai import OpenAI
-import os
 from pynput import keyboard
 
 class VoiceToChatApp:
@@ -38,6 +38,7 @@ class VoiceToChatApp:
         print(f"You said: {transcribed_text['text']}")
         response = self.send_message(transcribed_text['text'])
         print("AI: ", response)
+        self.speak(response)  # Speak the response using macOS's say command
 
     def send_message(self, content):
         completion = self.client.chat.completions.create(
@@ -49,6 +50,9 @@ class VoiceToChatApp:
             temperature=0.7,
         )
         return completion.choices[0].message.content
+
+    def speak(self, text):
+        os.system(f'say "{text}"')
 
     def start_chat(self):
         self.listener.start()

@@ -3,3 +3,4 @@ __pycache__/
 prompts/*
 *.mp3
 prompts/*
+env/*
